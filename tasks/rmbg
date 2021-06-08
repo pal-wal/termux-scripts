@@ -1,8 +1,9 @@
 #!/bin/sh
 
+# Looks for the path of the wallpaper we want to delete
 wall=$(cat "$HOME/.tmp/wall.dat")
 
 termux-toast "Deleting current wallpaper"
 rm $wall
+# Sets a new wallpaper
 $HOME/.shortcuts/tasks/setbg
-
