@@ -1,0 +1,6 @@
+#! /bin/sh
+
+wall=$(find $HOME/storage/pictures/Papes -type f | shuf -n 1)
+
+termux-wallpaper -f $wall 
+echo $wall > $HOME/.tmp/wall.dat

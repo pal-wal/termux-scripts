@@ -1,0 +1,8 @@
+#!/bin/sh
+
+wall=$(cat "$HOME/.tmp/wall.dat")
+
+termux-toast "Deleting current wallpaper"
+rm $wall
+$HOME/.shortcuts/tasks/setbg
+
