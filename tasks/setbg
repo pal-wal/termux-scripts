@@ -1,6 +1,8 @@
 #! /bin/sh
 
+# Directory for it to look for wallpapers in
 wall=$(find $HOME/storage/pictures/Papes -type f | shuf -n 1)
 
 termux-wallpaper -f $wall 
+# tmp direcotry to store the wallpaper it has chosen so that rmbg can know which one to delete
 echo $wall > $HOME/.tmp/wall.dat
